@@ -1,0 +1,138 @@
+/*Zera os padrões*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*Esquema de cores*/
+:root {
+  --background: rgb(18, 18, 20);
+	--light-grey: #C8C8C8;
+  --text-color: #9C9AB6;
+  --purple: #6C63FF;
+  --black: #4D4C59;
+}
+
+/*Setando a fonte default para o corpo*/
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/*Ajustando as dimensões, a direção flex e os detalhes do containter principal
+que deve cobrir todo o client width height*/
+.container {
+  background-color: var(--background);
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/*Propriedades do top/bottom*/
+.fixed {
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+}
+
+/*imagem do top*/
+.header {
+  background-image: url(../assets/top-image.svg);
+}
+
+/*imagem do bot*/
+.bottom {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(../assets/bottom-image.svg);
+}
+
+/*container main que deve ser flex dividido no meio*/
+.main {
+  display: flex;
+  flex: 2;
+}
+
+/*Define o tamanho do flex do contador*/
+.counter {
+  flex: 1;
+}
+
+/*Define o tamanho do flex da imagem*/
+.image {
+  background-image: url(../assets/rocket.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex: 1;
+}
+
+/*estilização do título*/
+h1 {
+  letter-spacing: 0.5rem;
+  color: var(--purple);
+  text-align: center;
+  font-weight: 500;
+  margin: 1.25rem;
+}
+
+/*Altura dos dois pontos para alinhar com os números*/
+.doubleDots {
+  margin-top: 12px;
+}
+
+/*Distancia e estilos dos números*/
+.timer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  color: var(--black);
+  font-size: 6rem;
+  margin-top: 7%;
+  font-weight: 400;
+}
+
+/*Estilo dos títulos*/
+.dates {
+  font-size: 0.8rem;
+  color: var(--light-grey);
+  font-weight: 300;
+}
+
+/**/
+.misc {
+  padding-top: 4vh;
+  color: var(--text-color);
+  text-align: center;
+}
+
+button {
+  border: none;
+  color: var(--light-grey);
+  background-color: var(--purple);
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  width: 15%;
+}
+
+.roda {
+  margin: 0 auto;
+  position: static;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.finished {
+  text-align: center;
+  margin-top: 16%; 
+  color: var(--light-grey);
+  font-weight: 500;
+  font-size: 500%;
+}
